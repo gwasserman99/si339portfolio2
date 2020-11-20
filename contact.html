@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <link rel="stylesheet" type="text/css" href="/css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <title>Contact Me</title>
+</head>
+
+
+
+
+<body>
+
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="outfits.html">Outfits</a></li>
+          <li><a class='current' href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+<main id="main">
+
+  <div class="intro">
+    <h1>Reach out!</h1>
+    <p>For inquiries, questions, and ideas, fill out the form below.</p>
+  </div>
+
+<form action="https://formspree.io/f/xleolrlr" method="POST">
+  <fieldset>
+    <legend>Contact Form</legend>
+
+  
+    <label for="name_id">Your Name</label>  
+    <input type="text" placeholder="Enter Your Name"
+    name="name" id="name_id">
+
+    <label for="email_id">Your Email</label>
+    <input type="email" placeholder="Enter Your Email"
+    id = "email_id" name="email" required>
+
+
+    <label for="phone_id">Your Phone Number</label>
+    <input type="tel" name="phone" id="phone_id"
+    placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+
+
+    <label for="msg">Leave a Message</label>
+
+    <textarea placeholder="Enter Message" 
+    id="msg" name="msg" required></textarea>
+
+    <input type="checkbox" checked="checked" 
+    name="remember" id="cbox">
+    <label for="cbox">Remember Me</label> 
+    
+
+    <input type="submit" value = "Send">
+  </fieldset>
+ </form>
+</main>
+</body>
+<footer>
+  <p>Made By Gillian Wasserman <br/>
+    &copy; SI 339 2020-2021</p>
+</footer>
+</html>

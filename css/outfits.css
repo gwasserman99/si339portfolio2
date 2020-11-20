@@ -1,0 +1,341 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  }
+  
+  h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+  }
+  
+  h2{
+  font-size: 32px;
+  line-height: 1.5;
+  }
+  
+  nav li{
+  display:inline;
+  padding-right:20px;
+  }
+  
+  nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+  }
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to add an underline when
+  links in the navigation are in the hover or focus state.*/
+  
+  nav a:hover{
+  text-decoration: underline;
+  }
+  
+  .skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  
+  /*Your code here*/
+  position: absolute;
+  top: -40px
+  }
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to position the skip class element*/
+  
+  .skip a:focus{
+  top: 0px
+  }
+  
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to style all elements when in focus*/
+  *:focus{
+  border: 2px solid black;
+  }
+  
+  nav{
+  background-color: #ddd;
+  padding: 25px 0; 
+  text-align: left;
+  }
+  
+  .current {
+    color: maroon;
+    text-decoration: underline;
+  }
+
+  footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  }
+  
+  
+  
+  
+  .container{
+  /*Your Code Here*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  }
+  
+  
+  
+ 
+  
+  
+  .welcome{
+  grid-row: 1/ span 1;
+  grid-column: 1 / -1;
+  height: 300px;
+  color: white;
+  background-color: white;
+  font-size: 17pt;
+  text-align: center;
+  background-image: url('../images/clouds.jpg');
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: 100%; 
+  }
+  
+  .textbox{
+    background-color: rgba(255, 255, 255, .6);
+    color: #000000;
+    padding: 30px;
+    align-self: center;
+    height: 100%;
+  }
+
+
+  .look1about{
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+  
+  
+  .top img{
+    height: 300px;
+  }
+  
+  .top{
+    grid-row: 3;
+    grid-column: 1;
+  }
+  
+  .bottom{
+    grid-row: 3;
+    grid-column: 3;
+  }
+  
+  .bottom img{
+    height: 300px;
+  }
+  
+  .plus{
+    color: black;
+    font-size: 100pt;
+    align-self: center;
+    grid-row: 3;
+    grid-column: 2;
+    vertical-align: middle;
+    justify-content: center;
+  }
+  
+  
+  .look2about{
+    grid-row: 4;
+    grid-column: 1 / -1;
+  }
+  
+  .topnext{
+    grid-row: 5;
+    grid-column: 1;
+  }
+  
+  .topnext img{
+    width: 60%;
+  }
+  
+  .bottomnext img{
+    width: 50%;
+  }
+  
+  
+  .bottomnext{
+    grid-row: 5;
+    grid-column: 3;
+  }
+  
+  
+  .plusnext{
+    color: black;
+    font-size: 100pt;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 2;
+    vertical-align: middle;
+    justify-content: center;
+  }
+  
+  
+  
+  .look3about{
+    grid-row: 6;
+    grid-column: 1 / -1;
+  }
+  
+  
+  .toplast{
+    grid-row: 7;
+    grid-column: 1;
+  }
+  
+  
+  .toplast img{
+    width: 50%;
+  }
+  
+  .bottomlast{
+    grid-row: 7;
+    grid-column: 3;
+  }
+  
+  .bottomlast img{
+    width: 50%;
+  }
+  
+  .pluslast{
+    color: black;
+    font-size: 100pt;
+    align-self: center;
+    grid-row: 7;
+    grid-column: 2;
+    vertical-align: middle;
+    justify-content: center;
+  }
+  
+  
+  
+  .topfourth{
+    grid-row: 8;
+    grid-column: 1;
+  }
+  
+  
+  .topfourth img{
+    width: 50%;
+  }
+  
+  .bottomfourth{
+    grid-row: 8;
+    grid-column: 3;
+  }
+  
+  .bottomfourth img{
+    width: 50%;
+  }
+  
+  .plusfourth{
+    color: black;
+    font-size: 100pt;
+    align-self: center;
+    grid-row: 8;
+    grid-column: 2;
+    vertical-align: middle;
+    justify-content: center;
+  }
+
+  .topfifth{
+    grid-row: 10;
+    grid-column: 1;
+  }
+  
+  
+  .topfifth img{
+    width: 50%;
+  }
+  
+  .bottomfifth{
+    grid-row: 10;
+    grid-column: 3;
+  }
+  
+  .bottomfifth img{
+    width: 50%;
+  }
+  
+  .plusfifth{
+    color: black;
+    font-size: 100pt;
+    align-self: center;
+    grid-row: 10;
+    grid-column: 2;
+    vertical-align: middle;
+    justify-content: center;
+  }
+  
+  
+  .text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  /*Your code here:*/
+  /*vertical-align: middle;
+  margin: auto;*/
+  align-self: center;
+  }
+  
+  
+  @media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+    /*Your code here:*/
+    text-align: right;
+    vertical-align: middle;
+  }
+  
+  .container{
+    /*Your code here:*/
+    grid-template-columns:  auto 500px auto;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+  }
+  
+
+  
+  /*You do not need to modify any code below this line.
+  It is included for accessibility to turn off animations
+  and movement for people who have modified their 
+  preferences to reduce motion.*/
+  
+  @media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+  
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+  
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+  }
+  

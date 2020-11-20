@@ -1,0 +1,190 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+
+  h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  h2{
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  
+  nav li{
+    display:inline;
+    padding-right:20px;
+  }
+  
+  nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+  }
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to add an underline when
+  links in the navigation are in the hover or focus state.*/
+  
+  nav a:hover{
+    text-decoration: underline;
+  }
+  
+  .current {
+    color: maroon;
+    text-decoration: underline;
+  }
+  
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    /*Your code here*/
+    position: absolute;
+    top: -40px
+  }
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to position the skip class element*/
+  
+  .skip a:focus{
+    top: 0px
+  }
+  
+  
+  /*Your Code Here*/
+  /*Write selector/rule property to style all elements when in focus*/
+  *:focus{
+    border: 2px solid black;
+  }
+  
+  nav{
+    background-color: #ddd;
+    padding: 25px 0; 
+    text-align: left;
+  }
+  
+  footer{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+
+  .intro{
+    /*Your Code Here*/
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: 100%;       /* Parallax effect */
+    color: #000000;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    text-align: center;
+    background-image: url("/images/marble.jpg");
+    overflow: hidden;
+    height: 300px;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+    margin: 20px;
+    background-color: white;
+  }
+  
+  legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  span{
+    margin-left:20%;
+    font-family: italic;
+    font-weight: bold;
+  }
+  
+  textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=checkbox]{
+      display:inline;
+      width:inherit;
+  }
+  
+  input[type=submit] {
+    background-color: #38803C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (min-width: 770px) {
+    form{
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    input{
+      width:80%;
+    }
+  
+    textarea{
+      width:80%;
+      height: 25vh;
+   }
+   
+   div + label{
+      line-height: 25vh;
+      vertical-align:top;
+   }
+  }
